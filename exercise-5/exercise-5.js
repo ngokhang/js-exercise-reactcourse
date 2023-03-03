@@ -5,6 +5,6 @@ function checkUsersValid(goodUsers) {
     // Coding here
     if (!Array.isArray(submittedUsers)) return false;
     submittedUsers = submittedUsers.map(user => JSON.stringify(user));
-    return submittedUsers.map(user => JSON.stringify(user)).every(user => goodUsers.includes(user));
+    return submittedUsers.every(user => goodUsers.includes(user));
   };
 }
