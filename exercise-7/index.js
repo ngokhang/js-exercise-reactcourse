@@ -9,6 +9,7 @@ function convertArrayToObject(array) {
     } else {
       pre[curr] = 1;
     }
+    // pre[curr] = ++pre[curr] || 1;
     return pre;
   }, {});
 };
